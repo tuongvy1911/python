@@ -1,0 +1,12 @@
+import pytest
+from television import Television
+
+def test_television_init():
+    tv = Television()
+    assert tv._Television__status == False
+    assert tv._Television__muted == False
+    assert tv._Television__volume == 0
+    assert tv._Television__channel == 0
+
+if __name__ == "__main__":
+    pytest.main()
